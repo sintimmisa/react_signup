@@ -1,23 +1,23 @@
-import React,{useEffect} from 'react';
+import React from 'react';
 import './App.css';
 
 import Validation from './Validation';
 import HandleForm from './HandleForm';
-import Swal from 'sweetalert2';
+//import Swal from 'sweetalert2';
 
 
 
 function App() {
 const {values,handleOnChange,handleOnSubmit,errors, } = HandleForm(Validation);
  
-
+/*
 useEffect(() => {
   if (errors.length===0){
     Swal.fire("Yaayy!!", "We clicked something", "success")
   }
   
   
-}, [])
+}, [])*/
   
 
    

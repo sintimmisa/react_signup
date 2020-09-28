@@ -1,6 +1,6 @@
-import React,{useState, useEffect} from 'react';
+import {useState} from 'react';
 import Validation from './Validation';
-import swal from 'sweetalert2';
+//import swal from 'sweetalert2';
 
 
 const HandleForm=()=>{
@@ -37,13 +37,8 @@ const [errors, setErrors]=useState({});
    
 }
 
-useEffect(() => {
-    if (Object.keys(errors).length===0)
-    return () => {
-        swal.fire("Yaayy!!", "We clicked something", "success")
-    }
-}, [])
-return {values,handleOnChange,handleOnSubmit,errors, useEffect}
+
+return {values,handleOnChange,handleOnSubmit,errors}
 
 }
 export default HandleForm;
